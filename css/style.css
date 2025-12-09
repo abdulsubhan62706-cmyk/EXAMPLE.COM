@@ -1,0 +1,190 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo img {
+
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcccb;
+}
+
+/* Main Section */
+main>section:first-child {
+    background: url('../img/bg.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+.main-content img.main-logo {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-content .search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffcccb;
+    border-radius: 4px;
+}
+
+/* Section with Links */
+main>section:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+main>section:nth-child(2) a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main>section:nth-child(2) a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main>section:nth-child(2) img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+main>section:nth-child(2) p {
+    font-size: 16px;
+}
+
+/* Features Section */
+.main-feature {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+.feature {
+    background-color: rgb(240, 168, 168);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    color: #d32f2f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Last section mai baad mai changes */
+.one {
+    width: 150px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns button and input */
+    gap: 8px;
+    /* Adds spacing between input and button */
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(200, 50, 50);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
